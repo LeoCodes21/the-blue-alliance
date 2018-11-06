@@ -180,6 +180,35 @@
             </pre>
         {% if types.starting_comp_level in enabled %}
         <h4>Test Notification</h4>
+            <form method="POST"
+                  action="/notifications/test/{{types.starting_comp_level}}"
+                  class="form-horizontal"
+                  role="form"
+                  onsubmit="event.preventDefault()">
+                <div class="row">
+                    <div class="form-group">
+                        <label for="upcomingNotificationEvent" class="col-sm-2 control-label">Event Key</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" required value="2014necmp" name="event_key" id="upcomingNotificationEvent">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="upcomingNotificationMatch" class="col-sm-2 control-label">Match Key</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" required value="2014necmp_f1m1" name="match_key" id="upcomingNotificationMatch">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-2"></div>
+                        <div class="col-sm-10">
+                            <button class="btn btn-info webhook-send-btn" type="submit">Send Test Level Starting</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="alert webhook-alert"></div>
+                </div>
+            </form>
 {#            <a href="/notifications/test/{{types.starting_comp_level}}" class="btn btn-default"><span class="glyphicon glyphicon-envelope"></span> Send Test Level Starting</a>#}
         {% endif %}
 
@@ -197,6 +226,29 @@
             </pre>
         {% if types.alliance_selection in enabled %}
         <h4>Test Notification</h4>
+            <form method="POST"
+                  action="/notifications/test/{{types.alliance_selection}}"
+                  class="form-horizontal"
+                  role="form"
+                  onsubmit="event.preventDefault()">
+                <div class="row">
+                    <div class="form-group">
+                        <label for="upcomingNotificationEvent" class="col-sm-2 control-label">Event Key</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" required value="2014necmp" name="event_key" id="upcomingNotificationEvent">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-2"></div>
+                        <div class="col-sm-10">
+                            <button class="btn btn-info webhook-send-btn" type="submit">Send Test Alliance Selection</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="alert webhook-alert"></div>
+                </div>
+            </form>
 {#            <a href="/notifications/test/{{types.alliance_selection}}" class="btn btn-default"><span class="glyphicon glyphicon-envelope"></span> Send Test Alliance Selection</a>#}
         {% endif %}
 
@@ -218,6 +270,30 @@
             </pre>
         {% if types.awards_posted in enabled %}
         <h4>Test Notification</h4>
+            <form method="POST"
+                  action="/notifications/test/{{types.awards_posted}}"
+                  class="form-horizontal"
+                  role="form"
+                  onsubmit="event.preventDefault()">
+                <div class="row">
+                    <div class="form-group">
+                        <label for="upcomingNotificationEvent" class="col-sm-2 control-label">Event Key</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" required value="2014necmp" name="event_key"
+                                   id="upcomingNotificationEvent">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-2"></div>
+                        <div class="col-sm-10">
+                            <button class="btn btn-info webhook-send-btn" type="submit">Send Test Awards</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="alert webhook-alert"></div>
+                </div>
+            </form>
 {#            <a href="/notifications/test/{{types.awards_posted}}" class="btn btn-default"><span class="glyphicon glyphicon-envelope"></span> Send Test Awards</a>#}
         {% endif %}
 
@@ -237,6 +313,7 @@
             </pre>
         {% if types.media_posted in enabled %}
         <h4>Test Notification</h4>
+            {# LeoCodes21 - media_posted is unimplemented so there is nothing here for now. #}
 {#            <a href="/notifications/test/{{types.media_posted}}" class="btn btn-default"><span class="glyphicon glyphicon-envelope"></span> Send Test Media</a>#}
         {% endif %}
 
@@ -255,6 +332,7 @@
             </pre>
         {% if types.disrict_points_updated in enabled %}
         <h4>Test Notification</h4>
+            {# LeoCodes21 - disrict_points_updated is unimplemented so there is nothing here for now. #}
 {#            <a href="/notifications/test/{{types.district_points_updated}}" class="btn btn-default"><span class="glyphicon glyphicon-envelope"></span> Send Test District Points</a>#}
         {% endif %}
 
@@ -274,6 +352,35 @@
             </pre>
         {% if types.schedule_updated in enabled %}
         <h4>Test Notification</h4>
+            <form method="POST"
+                  action="/notifications/test/{{types.schedule_updated}}"
+                  class="form-horizontal"
+                  role="form"
+                  onsubmit="event.preventDefault()">
+                <div class="row">
+                    <div class="form-group">
+                        <label for="upcomingNotificationEvent" class="col-sm-2 control-label">Event Key</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" required value="2014necmp" name="event_key" id="upcomingNotificationEvent">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="upcomingNotificationMatch" class="col-sm-2 control-label">Match Key</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" required value="2014necmp_f1m1" name="match_key" id="upcomingNotificationMatch">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-2"></div>
+                        <div class="col-sm-10">
+                            <button class="btn btn-info webhook-send-btn" type="submit">Send Test Schedule Update</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="alert webhook-alert"></div>
+                </div>
+            </form>
 {#            <a href="/notifications/test/{{types.schedule_updated}}" class="btn btn-default"><span class="glyphicon glyphicon-envelope"></span> Send Test Schedule Update</a>#}
         {% endif %}
 
@@ -294,6 +401,7 @@
           </pre>
         {% if types.final_results in enabled %}
         <h4>Test Notification</h4>
+            {# LeoCodes21 - final_results is unimplemented so there is nothing here for now. #}
 {#            <a href="/notifications/test/{{types.final_results}}" class="btn btn-default"><span class="glyphicon glyphicon-envelope"></span> Send Test Final Results</a>#}
         {% endif %}
 
