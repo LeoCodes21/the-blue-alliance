@@ -17,6 +17,7 @@ import tba_config
 from helpers.user_bundle import UserBundle
 from models.sitevar import Sitevar
 from stackdriver.profiler import trace_context, TraceContext
+from webapp2_extras import sessions
 
 
 class CacheableHandler(webapp2.RequestHandler):
